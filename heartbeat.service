@@ -1,0 +1,12 @@
+[Unit]
+Description=Internet Heartbeat
+
+[Service]
+Type=oneshot
+User=garak
+Group=garak
+WorkingDirectory=/home/garak/heartbeat
+ExecStart=/home/garak/heartbeat/heartbeat.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=Internet Heartbeat
+
+[Timer]
+Unit=heartbeat.service
+OnBootSec=1m
+OnUnitActiveSec=1m
+AccuracySec=1sec
+Persistent=true
+
+[Install]
+WantedBy=timers.target
